@@ -55,9 +55,9 @@
 
       <!-- Form -->
 
-      <section class="form">
-        <div class="container" data-aos="zoom-in">
-            <div class="card" id="carte">
+      <section class="form" >
+        <div class="container grid" id="oui2" data-aos="zoom-in">
+            <div class="card text-center" id="carte">
               <p>N'hésitez pas à nous contacter pour toute demande de devis.</p>
               <h1>Contactez nous</h1>
               <p>Email : contact@linkopg.onmicrosoft.com</p>
@@ -67,8 +67,7 @@
               <a href="https://www.instagram.com/linko_polytech_grenoble/"><i class="fab fa-instagram fa-3x"></i></a>
               <a href=""></a>
             </div>
-          </div>
-          <div class="card">
+          <div class="card" id="formcontrol">
             <form class="showcase-form" action="POST" data-netlify="true">
               <div class="form-control container grid">
                 <input type="text" name="name" placeholder="Nom" required />
@@ -95,7 +94,6 @@
               <div class="g-recaptcha form-control">
                 <div data-netlify-recaptcha="true"></div>
               </div>
-              <div id="status"></div>
             </form>
           </div>
         </div>
@@ -132,8 +130,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-        offset: 400,
-        duration: 1000
+        offset: 200,
+        duration: 1000,
+        delay: 100
         });
     </script>
     <script src="script.js"></script>
