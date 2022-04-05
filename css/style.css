@@ -8,9 +8,9 @@
     --light-color: #f4f4f4;
 }
 
-.g-recaptcha div:first-child {
+.g-recaptcha {
 
-    margin: auto;
+    margin: 0 auto;
 }
 
 * {
