@@ -161,6 +161,7 @@ ul li a.active, ul li a:hover{
     display: none;
   }
 
+ 
   @media (max-width: 952px){
     .logo{
       padding-left: 50px;
@@ -285,10 +286,18 @@ ul li a.active, ul li a:hover{
 
 }
 
+
+
 .showcase-form {
     height: fit-content;
     width: 100%;
     position: relative;
+}
+
+@media (max-width: 522px) {
+      .showcase-form{
+          width: fit-content;
+      }
 }
 
 .form img {
