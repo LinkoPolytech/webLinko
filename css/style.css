@@ -8,7 +8,7 @@
     --light-color: #f4f4f4;
 }
 
-.g-recaptcha {
+.g-recaptcha div:first-child {
 
     margin: 0 auto;
 }
