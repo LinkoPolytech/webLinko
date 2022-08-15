@@ -21,7 +21,7 @@ function scrollFunction() {
   }
 }
 
-var rootElement = document.documentElement
+const rootElement = document.documentElement
 
 function scrollToTop() {
     // Scroll to top logic
@@ -35,10 +35,10 @@ function scrollToTop() {
 window.onscroll = function() {stickyFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+const sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyFunction() {
@@ -47,4 +47,18 @@ function stickyFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+const test = document.getElementById('test');
+const archiveCell = document.querySelectorAll('[data-cell]')
+const popups = document.querySelectorAll('[data-popup]');
+
+for (let i = 0; i < popups.length; i++){
+  archiveCell[i].addEventListener('mouseover', ()=>{
+    popups[i].classList.remove("hidden");
+  })
+
+  popups[i].addEventListener('mouseout',()=>{
+    popups[i].classList.add("hidden");
+  })
 }
