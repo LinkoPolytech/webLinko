@@ -593,13 +593,13 @@ textarea {
   width: 60%;
   height: 30rem;
   margin: 0 20%;
+  background-size: cover;
 
 }
 
-.archiveBx img{
-  background-size: cover;}
 
 .popup-box{
+  animation: fade-in 0.7s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -608,6 +608,13 @@ textarea {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0;
   margin: 0;
+  overflow-y: auto;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  
 }
 
 .popup-box h1{
@@ -617,6 +624,7 @@ textarea {
   color: white;
   font-weight: 800;
   font-size: 2.5rem;
+  
 }
 
 .popup-box p{
@@ -624,6 +632,7 @@ textarea {
   top : 10%;
   color: white;
   padding: 2rem;
+  margin: 0;
   font-size: 1.5rem;
 }
 
